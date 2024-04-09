@@ -1,0 +1,13 @@
+workspace = { members = ["tasks/add_todo", "tasks/done_todo", "tasks/list_todo", "tasks/remove_todo"] }
+[package]
+name = "rust-todos"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+add_todo = { version = "0.1.0", path = "tasks/add_todo" }
+done_todo = { version = "0.1.0", path = "tasks/done_todo" }
+list_todo = { version = "0.1.0", path = "tasks/list_todo" }
+remove_todo = { version = "0.1.0", path = "tasks/remove_todo" }
